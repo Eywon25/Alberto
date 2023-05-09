@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+body{
+    overflow: hidden;
+}
+.main-width{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: url("bg.gif") no-repeat fixed center;
+    background-size: cover;
+    background-position: center;
+
+}
+/* navbar styling */
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  nav.sticky{
+    background: #4070f4;
+    padding: 13px 0;
+  }
+  nav .navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  nav .navbar .logo a{
+    font-weight: 500;
+    font-size: 35px;
+    color: #4070f4;
+  }
+  nav.sticky .navbar .logo a{
+    color: #fff;
+  }
+  nav .navbar .menu{
+    display: flex;
+    position: relative;
+  }
+  nav .navbar .menu li{
+    list-style: none;
+    margin: 0 8px;
+  }
+  .navbar .menu a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #eee;
+    padding: 6px 0;
+    transition: all 0.4s ease;
+  }
+  .navbar .menu a:hover{
+    color: #2ecc71;
+  }
+  nav.sticky .menu a{
+    color: #FFF;
+  }
+  nav.sticky .menu a:hover{
+    color: #0E2431;
+  }
+  .container{
+    padding: 190px;
+}
+.container .hero-text{
+    margin-bottom: 40px;
+}
+.container .hero-text h1{
+    color: white;
+    font-size: 47px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 20px 0px 20px;
+}
+span{
+    color: #2ecc71;
+}
+.container .hero-text h3{
+    color: #eee;
+    font-weight: 400;
+    font-size: 17px;
+}
+.container .hero-text p{
+    width: 440px;
+    max-width: 100%;
+    color: #eee;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.social a{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #eee;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 35px;
+}
+.social a:hover{
+    transform: scale(1.1);
+    background: #2ecc71;
+    transition: .4s;
+}
+.container .hero-text button{
+    color: #eee;
+    background: #2ecc71;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 8px 30px;
+    border: 2px solid #2ecc71;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.container .hero-text button:hover{
+    background: transparent;
+    border: 2px solid #2ecc71;
+    color: #2ecc71;
+    transition: .4s;
+}
+.bottom{
+    margin-top: 243px;
+    padding-bottom: 40px;
+}
+.bottom p{
+    color: #eee;
+    ;letter-spacing: 2px;
+    font-size: 15px;
+}
+  /* Side Navigation Menu Button CSS */
+  nav .menu-btn,
+.navbar .menu .cancel-btn{
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+nav .menu-btn{
+  color: #4070f4;
+}
+nav.sticky .menu-btn{
+  color: #FFF;
+}
+.navbar .menu .menu-btn{
+  color: #fff;
+}
+.container{
+    padding: 190px;
+}
+.container .hero-text{
+    margin-bottom: 40px;
+}
+.container .hero-text h1{
+    color: white;
+    font-size: 47px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 20px 0px 20px;
+}
+span{
+    color: #2ecc71;
+}
+.container .hero-text h3{
+    color: #eee;
+    font-weight: 400;
+    font-size: 17px;
+}
+.container .hero-text p{
+    width: 440px;
+    max-width: 100%;
+    color: #eee;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.social a{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #eee;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 35px;
+}
+.social a:hover{
+    transform: scale(1.1);
+    background: #2ecc71;
+    transition: .4s;
+}
+.container .hero-text button{
+    color: #eee;
+    background: #2ecc71;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 8px 30px;
+    border: 2px solid #2ecc71;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.container .hero-text button:hover{
+    background: transparent;
+    border: 2px solid #2ecc71;
+    color: #2ecc71;
+    transition: .4s;
+}
+.bottom{
+    margin-top: 243px;
+    padding-bottom: 40px;
+}
+.bottom p{
+    color: #eee;
+    ;letter-spacing: 2px;
+    font-size: 15px;
+}
+  
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+    section .content{
+      width: 85%;
+    }
+  }
+  @media (max-width: 1000px) {
+    .about .about-details{
+      justify-content: center;
+      flex-direction: column;
+    }
+    .about .about-details .left{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    .about-details .right{
+      width: 90%;
+      margin: 40px 0;
+    }
+    .services .boxes .box{
+      margin: 20px 0;
+      width: calc(100% / 2 - 20px);
+    }
+  }
+  
