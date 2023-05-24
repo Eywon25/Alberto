@@ -1,66 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>WEBSITE</title>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <section class="hero">
-    <nav>
-        <div class="navbar">
-          <div class="logo"><a href="#">Portfolio.</a></div>
-          <ul class="menu">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <div class="cancel-btn">
-                <i class="fas fa-times"></i>
-              </div>
-          </ul>
-        </div>
-        <div class="menu-btn">
-          <i class="fas fa-bars"></i>
-        </div>
-      </nav>
-<!-- Home Section Start -->
-        <section class="home" id="home">
-            <div class="container">
-                <div class="hero-text">
-                    <h3>Hi, There!</h3>
-                    <h1>I Am <span class="input"></span></h1>
-                    <p>A passionate web developer creating responsive websites and building applications providing innovative design.</p>
-                    <div class="social">
-                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-discord"></i></a>
-                    </div>
-                    <button type="button">Contact Me</button>
-                </div>
+    <!-- MENU -->
+    <div class="content-header">
+        <header>
+            <div class="logo">
+                <a href="#">AJA</a>
             </div>
-        </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home" onclick="selection()">HOME</a></li>
+                    <li><a href="#about" onclick="selection()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="selection()">SKILLS</a></li>
+                    <li><a href="#education" onclick="selection()">EDUCATION</a></li>
+                    <li><a href="#portfolio" onclick="selection()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="selection()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="selectionMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
     </div>
 
-    <script type="text/javascript" src="js/script.js"></script>
-
-    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-    <script>
-        var Typed = new Typed(".input", {
-            strings:["Aaron Jon Alberto ","a BSIT Student","a Future Web Developer"],
-            typeSpeed: 70,
-            backSpeed: 60,
-            loop: true
-        });
-    </script>
+    <!-- HOME SECTION -->
+    <section id="home" class="home">
+        <div class="content-banner">
+            <div class="content-img">
+                <img src="img/Eywon.png" alt="">
+            </div>
+            <h1>Aaron Jon Alberto</h1>
+            <h2>FUTURE SOFTWARE ENGINEER</h2>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
     </section>
 
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="content-section">
+            <h2>About Me</h2>
+            <p><span>Hello, I'm Aaron Jon Alberto.</span> A passionate web developer creating responsive websites and building applications providing innovative design.</p>
+
+            <div class="file">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Personal Data</h3>
+                    <ul>
+                        <li>
+                            <strong>Birthday</strong>
+                            08-25-2002
+                        </li>
+                        <li>
+                            <strong>Contact Number</strong>
+                            09218464764
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            aaronjonalberto@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Address</strong>
+                            San Isidro Puro, Legazpi City
+                        </li>
+                        <li>
+                            <strong>Status</strong>
+                            Single
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Interests</h3>
+                    <div class="content-interests">
+                        <div class="interest">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>GAMES</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-basketball"></i>
+                            <span>SPORTS</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-burger"></i>
+                            <span>EATING</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>TRAVEL</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-book"></i>
+                            <span>BOOKS</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-mobile-android"></i>
+                            <span>PHONE</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>PHOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
 </body>
 </html>
